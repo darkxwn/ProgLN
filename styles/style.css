@@ -15,7 +15,7 @@ a {
 }
 body {
 	display: grid;
-	grid-template-columns: 1fr 2fr 1.5fr 1fr;
+	grid-template-columns: 0.8fr 2fr 1.5fr 0.8fr;
 	grid-template-rows: 10px auto auto 1fr 60px;
 	row-gap: 5px;
 	column-gap: 5px;
@@ -161,13 +161,12 @@ body {
 .content {
 	grid-area: content;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; 
     align-items: center;
 }
 
 .article {
 	padding: 5px;
-	margin: 5px 0;
 }
 
 .article p {
@@ -197,6 +196,7 @@ body {
 	height: fit-content;
 	padding: 5px;
 	margin: 5px 0;
+    border-bottom: 1px solid #000;
 }
 
 .to-the-article {
@@ -477,7 +477,8 @@ body {
 }
 
 /* Phone */
-@media screen and (max-width: 426px) and (orientation: landscape){
+@media screen and (max-width: 426px), 
+screen and (orientation: landscape ){
 	body {
 		display: grid;
 		grid-template-columns: 1fr;
