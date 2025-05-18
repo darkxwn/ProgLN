@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ProgLN | Компилируемые и интерпретируемые языки программирования: разница?</title>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles/style.css" />
+	</head>
+
+	<body>
+		<hr class="upper-line" />
+		<header class="header">
+			<div class="site">
+				<a class="site-link" href="index.html">
+					<h1 class="site-name">ProgLN</h1>
+					<img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+				</a>
+			</div>
+			<div class="second-line">
+				<div class="description">
+					<p class="desc-text">Сайт о языках программирования</p>
+				</div>
+				<nav class="navigation">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="../index.html">Главная</a></li>
+						<li class="nav-item"><a href="../languages.html">Языки</a></li>
+						<li class="nav-item"><a href="../articles.html">Статьи</a></li>
+						<li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+						<li class="nav-item"><a href="../about.html">О нас</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="empty1"></div>
+		<div class="poster">
+			<img src="../images/poster.png" alt="Постер ProgLN" />
+			<hr />
+		</div>
+		<main class="container">
+			<article class="article">
+				<header class="article-header">
+					<h2 class="article-h2">Компилируемые и интерпретируемые языки программирования: разница?</h2>
+				</header>
+				<p>
+					Языки программирования можно условно разделить на две категории: <strong><u>компилируемые</u></strong> и
+					<strong><u>интерпретируемые</u></strong
+					>. Разница заключается в том, как код превращается в исполняемый файл или исполняется компьютером. Ниже рассмотрим подробно.
+				</p>
+				<section>
+					<h3 class="article-h3">1. Компилируемые языки</h3>
+					<p>Компилируемые языки преобразуют исходный код в машинный или промежуточный код с помощью компилятора до запуска программы.</p>
+					<p><strong>Примеры:</strong> C, C++, Rust, Go, Swift, Fortran, Ada</p>
+				</section>
+				<section>
+					<h3 class="article-h3">2. Интерпретируемые языки</h3>
+					<p>Интерпретируемые языки исполняются "на лету" — без предварительной компиляции, интерпретатор читает и выполняет код построчно.</p>
+					<p><strong>Примеры:</strong> Python, JavaScript, Ruby, PHP, Perl, Lua, Bash</p>
+				</section>
+				<section>
+					<h3 class="article-h3">3. Сравнение</h3>
+					<table class="table removable scalelable">
+						<thead>
+							<tr>
+								<th>Характеристика</th>
+								<th>Компилируемые языки</th>
+								<th>Интерпретируемые языки</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Преобразование кода</td>
+								<td>Компиляция в машинный код</td>
+								<td>Построчное исполнение исходного кода</td>
+							</tr>
+							<tr>
+								<td>Скорость выполнения</td>
+								<td>Быстрее</td>
+								<td>Медленнее</td>
+							</tr>
+							<tr>
+								<td>Отладка</td>
+								<td>Сложнее, требует перекомпиляции</td>
+								<td>Проще, можно выполнять частично</td>
+							</tr>
+							<tr>
+								<td>Портабельность</td>
+								<td>Меньше</td>
+								<td>Больше</td>
+							</tr>
+							<tr>
+								<td>Зависимость</td>
+								<td>Не требует компилятора при запуске</td>
+								<td>Требуется интерпретатор</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h3 class="article-h3">4. Гибридные подходы</h3>
+					<p>Некоторые языки используют смешанную модель:</p>
+					<ul class="article-list">
+						<li><strong>Java:</strong> компилируется в байт-код, который исполняется JVM</li>
+						<li><strong>Python:</strong> компилируется в .pyc и исполняется интерпретатором</li>
+						<li><strong>JavaScript:</strong> современные движки используют JIT-компиляцию</li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="article-h3">5. Преимущества и недостатки</h3>
+					<h4 class="article-h4">Компилируемые языки</h4>
+					<ul class="article-list">
+						<li><strong>Плюсы:</strong> высокая производительность, отсутствие зависимости от интерпретатора</li>
+						<li><strong>Минусы:</strong> время компиляции, сложность отладки, платформозависимость</li>
+					</ul>
+					<h4 class="article-h4">Интерпретируемые языки</h4>
+					<ul class="article-list">
+						<li><strong>Плюсы:</strong> удобство, простота, кроссплатформенность</li>
+						<li><strong>Минусы:</strong> более медленная работа, требование интерпретатора</li>
+					</ul>
+				</section>
+				<footer class="article-footer">
+					<span class="nowrap">Рубрика: <span class="blue">Без рубрики</span></span>
+					<span>|</span>
+					<span>Тэги:</span>
+                    <ul class="tags">
+                        <li class="blue">#интерпритируемый</li>
+						<li class="blue">#компилируемый</li>
+                    </ul>
+
+				</footer>
+			</article>
+		</main>
+		<div class="empty2"></div>
+		<footer class="footer">
+			<div class="copyright scalelable">
+				<span>
+					&copy;<span class="copyright-text">Все права защищены,</span>
+					<span class="nowrap">ProgLN <span id="year"></span> </span>
+				</span>
+			</div>
+			<div class="contacts">
+				<h3 class="contacts-header">Контакты</h3>
+				<ul class="contacts-list">
+					<li class="contacts-item">
+						<a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+					</li>
+					<li class="contacts-item">
+						<a href="mailto:zlobin_victor.off@m'ail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>

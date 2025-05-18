@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ProgLN | Fortran</title>
+		<meta name="description" content="Статья о языке программирования Fortran: история, особенности, развитие, преимущества и недостатки, пример кода." />
+		<meta name="keywords" content="Fortran, язык программирования, вычисления, научное программирование, история Fortran" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles/style.css" />
+	</head>
+
+	<body>
+		<hr class="upper-line" />
+		<header class="header">
+			<div class="site">
+				<a class="site-link" href="index.html">
+					<h1 class="site-name">ProgLN</h1>
+					<img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+				</a>
+			</div>
+			<div class="second-line">
+				<div class="description">
+					<p class="desc-text">Сайт о языках программирования</p>
+				</div>
+				<nav class="navigation">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="../index.html">Главная</a></li>
+						<li class="nav-item"><a href="../languages.html">Языки</a></li>
+						<li class="nav-item"><a href="../articles.html">Статьи</a></li>
+						<li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+						<li class="nav-item"><a href="../about.html">О нас</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="empty1"></div>
+		<div class="poster">
+			<img src="../images/poster.png" alt="Постер ProgLN" />
+			<hr />
+		</div>
+
+		<main class="container">
+			<article class="article">
+				<header class="article-header">
+					<h2 class="article-h2">Язык программирования Fortran</h2>
+				</header>
+				<img class="article-lang-logo" src="../images/logos/fortran.svg" alt="Fortran" />
+
+				<p>
+					Fortran (Formula Translation) — один из первых высокоуровневых языков программирования, созданный в 1950-х годах в компании IBM. Он был
+					спроектирован специально для выполнения численных и научных расчётов и на протяжении десятилетий оставался основным инструментом для научного
+					сообщества и инженеров.
+				</p>
+				<p>
+					Fortran известен своей эффективностью при работе с массивами, матрицами и численными методами, что делает его актуальным и сегодня в
+					высокопроизводительных вычислениях (HPC).
+				</p>
+
+				<section>
+					<h3 class="article-h3">Развитие Fortran</h3>
+					<p>
+						Fortran прошёл долгий путь развития: от первой версии Fortran I (1957) до современных стандартов, таких как Fortran 90, 2003, 2008 и 2018. 
+						Каждая новая версия добавляла поддержку структур данных, модулей, параллелизма и объектно-ориентированных подходов.
+					</p>
+					<p>
+						Язык остаётся актуальным благодаря своей скорости, зрелой экосистеме компиляторов и активному использованию в научной сфере, особенно в задачах
+						моделирования, численного анализа и климатического моделирования.
+					</p>
+				</section>
+				<section>
+					<h3 class="article-h3">Характеристика, преимущества и недостатки Fortran</h3>
+					<p>
+						Fortran обеспечивает высокую производительность в численных вычислениях, особенно на суперкомпьютерах и в системах с параллельной архитектурой. Его зрелая экосистема компиляторов и стабильный синтаксис делают его надёжным выбором для инженерных задач. Язык также хорошо оптимизируется современными компиляторами.
+					</p>
+					<p>
+						Однако Fortran ограничен в области современной разработки пользовательских интерфейсов, мобильных и веб-приложений. Его синтаксис может показаться устаревшим, а количество программистов, владеющих им, сокращается. Также Fortran не всегда легко интегрируется с современными технологиями и языками.
+					</p>
+                    <table class="table">
+						<thead>
+							<tr>
+								<th>Аспект</th>
+								<th>Описание</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Типизация</td>
+								<td>Статическая</td>
+							</tr>
+							<tr>
+								<td>Парадигмы</td>
+								<td>Процедурная, структурная, частично объектно-ориентированная</td>
+							</tr>
+							<tr>
+								<td>Скорость выполнения</td>
+								<td>Очень высокая (оптимизирован для численных задач)</td>
+							</tr>
+							<tr>
+								<td>Управление памятью</td>
+								<td>Явное, без сборщика мусора</td>
+							</tr>
+							<tr>
+								<td>Применение</td>
+								<td>Научные вычисления, моделирование, климатология, физика</td>
+							</tr>
+							<tr>
+								<td>Основные преимущества</td>
+								<td>Высокая производительность, зрелость, эффективность для численных задач</td>
+							</tr>
+							<tr>
+								<td>Основные недостатки</td>
+								<td>Устаревший синтаксис, ограниченность в современных задачах, узкая сфера применения</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h3 class="article-h3">Пример кода на Fortran</h3>
+					<p>Простой пример, вычисляющий сумму двух чисел и выводящий результат:</p>
+					<div class="terminal-wrapper">
+						<span>Fortran</span>
+						<pre class="terminal"><code>program sum_example<br>implicit none<br>integer :: a, b, result<br><br>a = 5<br>b = 7<br>result = a + b<br><br>print *, 'Сумма:', result<br>end program sum_example</code></pre>
+					</div>
+				</section>
+
+				<footer class="article-footer">
+					<span class="nowrap">Рубрика: <span class="blue">Научные языки</span></span>
+					<span>|</span>
+					<span>Тэги:</span>
+					<ul class="tags">
+						<li class="blue">#Fortran</li>
+						<li class="blue">#НаучноеПрограммирование</li>
+						<li class="blue">#Вычисления</li>
+					</ul>
+				</footer>
+			</article>
+		</main>
+
+		<div class="empty2"></div>
+		<footer class="footer">
+			<div class="copyright scalelable">
+				<span>
+					&copy;<span class="copyright-text">Все права защищены,</span>
+					<span class="nowrap">ProgLN <span id="year"></span></span>
+				</span>
+			</div>
+			<div class="contacts">
+				<h3 class="contacts-header">Контакты</h3>
+				<ul class="contacts-list">
+					<li class="contacts-item">
+						<a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+					</li>
+					<li class="contacts-item">
+						<a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>

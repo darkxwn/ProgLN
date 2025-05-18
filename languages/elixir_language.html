@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ProgLN | Elixir</title>
+		<meta name="description" content="Статья о языке программирования Elixir: история, особенности, преимущества и недостатки, пример кода." />
+		<meta name="keywords" content="Elixir, Erlang, язык программирования, функциональный, распределённые системы, Phoenix" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles/style.css" />
+	</head>
+
+	<body>
+		<hr class="upper-line" />
+		<header class="header">
+			<div class="site">
+				<a class="site-link" href="index.html">
+					<h1 class="site-name">ProgLN</h1>
+					<img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+				</a>
+			</div>
+			<div class="second-line">
+				<div class="description">
+					<p class="desc-text">Сайт о языках программирования</p>
+				</div>
+				<nav class="navigation">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="../index.html">Главная</a></li>
+						<li class="nav-item"><a href="../languages.html">Языки</a></li>
+						<li class="nav-item"><a href="../articles.html">Статьи</a></li>
+						<li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+						<li class="nav-item"><a href="../about.html">О нас</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="empty1"></div>
+		<div class="poster">
+			<img src="../images/poster.png" alt="Постер ProgLN" />
+			<hr />
+		</div>
+
+		<main class="container">
+			<article class="article">
+				<header class="article-header">
+					<h2 class="article-h2">Язык программирования Elixir</h2>
+				</header>
+				<img class="article-lang-logo" src="../images/logos/elixir.svg" alt="Elixir" />
+
+				<p>
+					Elixir — это функциональный, конкурентный язык программирования, построенный на виртуальной машине Erlang (BEAM). Он обеспечивает высокую
+					надёжность и масштабируемость, что делает его особенно подходящим для распределённых систем и приложений с высокой нагрузкой.
+				</p>
+				<p>
+					Язык был создан в 2011 году Жозе Валимом, одним из участников команды разработки Ruby on Rails. Elixir сочетает в себе надёжность Erlang и
+					современный синтаксис, вдохновлённый Ruby.
+				</p>
+
+				<section>
+					<h3 class="article-h3">Развитие языка Elixir</h3>
+					<p>
+						Elixir активно развивается с момента своего появления. Сообщество растёт, появляются новые библиотеки и инструменты, включая LiveView для
+						реактивных интерфейсов. Проекты на Elixir широко применяются в стартапах и крупных распределённых системах.
+					</p>
+				</section>
+
+				<section>
+					<h3 class="article-h3">Характеристика, преимущества и недостатки Elixir</h3>
+					<p>
+						Elixir поддерживает неизменяемость данных, конкурентное программирование с использованием акторов (через Erlang/OTP) и предоставляет
+						богатую стандартную библиотеку. Его инструмент Phoenix является популярным веб-фреймворком для высоконагруженных приложений.
+					</p>
+					<p>
+						Elixir сочетает надёжность Erlang с выразительным синтаксисом, что упрощает разработку распределённых систем. Он обеспечивает лёгкую
+						масштабируемость, fault-tolerance и быстрый отклик приложений даже при высокой нагрузке.
+					</p>
+					<p>
+						К недостаткам можно отнести относительную новизну языка, меньшую экосистему по сравнению с более зрелыми языками и специфичную модель
+						мышления, требующую времени на освоение функциональных концепций и OTP.
+					</p>
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Аспект</th>
+								<th>Описание</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Типизация</td>
+								<td>Динамическая</td>
+							</tr>
+							<tr>
+								<td>Парадигмы</td>
+								<td>Функциональное, конкурентное</td>
+							</tr>
+							<tr>
+								<td>Скорость выполнения</td>
+								<td>Высокая для распределённых задач</td>
+							</tr>
+							<tr>
+								<td>Управление памятью</td>
+								<td>Сборка мусора (через BEAM)</td>
+							</tr>
+							<tr>
+								<td>Применение</td>
+								<td>Веб-сервисы, распределённые системы, IoT</td>
+							</tr>
+							<tr>
+								<td>Основные преимущества</td>
+								<td>Надёжность, масштабируемость, современный синтаксис</td>
+							</tr>
+							<tr>
+								<td>Основные недостатки</td>
+								<td>Относительно малая экосистема, высокая кривая обучения</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h3 class="article-h3">Пример кода на Elixir</h3>
+					<p>Пример рекурсивного вычисления факториала:</p>
+					<div class="terminal-wrapper">
+						<span>Elixir</span>
+						<pre
+							class="terminal"
+						><code>defmodule Math do<br>  def factorial(0), do: 1<br>  def factorial(n), do: n * factorial(n - 1)<br>end<br><br>IO.puts Math.factorial(5)</code></pre>
+					</div>
+				</section>
+
+				<footer class="article-footer">
+					<span class="nowrap">Рубрика: <span class="blue">Функциональные языки</span></span>
+					<span>|</span>
+					<span>Тэги:</span>
+					<ul class="tags">
+						<li class="blue">#elixir</li>
+						<li class="blue">#erlang</li>
+						<li class="blue">#функциональное</li>
+					</ul>
+				</footer>
+			</article>
+		</main>
+
+		<div class="empty2"></div>
+		<footer class="footer">
+			<div class="copyright scalelable">
+				<span>
+					&copy;<span class="copyright-text">Все права защищены,</span>
+					<span class="nowrap">ProgLN <span id="year"></span></span>
+				</span>
+			</div>
+			<div class="contacts">
+				<h3 class="contacts-header">Контакты</h3>
+				<ul class="contacts-list">
+					<li class="contacts-item">
+						<a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+					</li>
+					<li class="contacts-item">
+						<a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>

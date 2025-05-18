@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ProgLN | Dart</title>
+		<meta name="description" content="Подробный обзор языка программирования Dart: история, особенности, преимущества и недостатки, пример кода." />
+		<meta name="keywords" content="Dart, язык программирования, Flutter, мобильная разработка, веб-разработка, особенности, код, ProgLN" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles/style.css" />
+	</head>
+
+	<body>
+		<hr class="upper-line" />
+		<header class="header">
+			<div class="site">
+				<a class="site-link" href="index.html">
+					<h1 class="site-name">ProgLN</h1>
+					<img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+				</a>
+			</div>
+			<div class="second-line">
+				<div class="description">
+					<p class="desc-text">Сайт о языках программирования</p>
+				</div>
+				<nav class="navigation">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="../index.html">Главная</a></li>
+						<li class="nav-item"><a href="../languages.html">Языки</a></li>
+						<li class="nav-item"><a href="../articles.html">Статьи</a></li>
+						<li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+						<li class="nav-item"><a href="../about.html">О нас</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="empty1"></div>
+		<div class="poster">
+			<img src="../images/poster.png" alt="Постер ProgLN" />
+			<hr />
+		</div>
+
+		<main class="container">
+			<article class="article">
+				<header class="article-header">
+					<h2 class="article-h2">Язык программирования Dart</h2>
+				</header>
+				<img class="article-lang-logo" src="../images/logos/dart.svg" alt="Dart" />
+
+				<p>
+					Dart — современный объектно-ориентированный язык программирования, разработанный компанией Google в 2011 году. Он ориентирован на создание
+					клиентских приложений, особенно в мобильной и веб-разработке. Наибольшую популярность Dart получил благодаря фреймворку Flutter, который
+					позволяет создавать кроссплатформенные мобильные приложения с единым кодом.
+				</p>
+				<p>
+					Язык Dart компилируется как в нативный машинный код, так и в JavaScript для выполнения в браузере. Он предоставляет мощные средства
+					типизации, простую структуру и удобный синтаксис, знакомый разработчикам на Java, JavaScript и C#.
+				</p>
+
+				<section>
+					<h3 class="article-h3">Развитие Dart</h3>
+					<p>
+						После запуска Dart в 2011 году он развивался как альтернатива JavaScript, но позднее его основное применение сместилось в сторону
+						мобильной разработки. С выходом Flutter в 2017 году язык получил второе дыхание, став основой для быстрого и эффективного создания UI.
+					</p>
+					<p>
+						Dart продолжает активно развиваться. Язык получает регулярные обновления от Google и имеет растущее сообщество, особенно среди мобильных
+						разработчиков.
+					</p>
+				</section>
+
+				<section>
+					<h3 class="article-h3">Характеристика, преимущества и недостатки Dart</h3>
+					<p>
+						Dart использует строгую статическую типизацию, при этом оставаясь гибким. Он поддерживает асинхронное программирование с помощью
+						`async/await`, объектно-ориентированную модель, а также современный инструментарий для разработки.
+					</p>
+					<p>
+						Среди преимуществ — высокая производительность, кроссплатформенность, простота изучения, а также тесная интеграция с Flutter. Однако его
+						недостатками являются относительная нишевость и ограниченная экосистема по сравнению с более зрелыми языками.
+					</p>
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Аспект</th>
+								<th>Описание</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Типизация</td>
+								<td>Статическая, строгая</td>
+							</tr>
+							<tr>
+								<td>Парадигмы</td>
+								<td>Объектно-ориентированное, асинхронное</td>
+							</tr>
+							<tr>
+								<td>Скорость выполнения</td>
+								<td>Высокая при нативной компиляции</td>
+							</tr>
+							<tr>
+								<td>Управление памятью</td>
+								<td>Автоматическое, сборка мусора</td>
+							</tr>
+							<tr>
+								<td>Применение</td>
+								<td>Мобильная разработка, веб, десктоп</td>
+							</tr>
+							<tr>
+								<td>Основные преимущества</td>
+								<td>Кроссплатформенность, производительность, удобство</td>
+							</tr>
+							<tr>
+								<td>Основные недостатки</td>
+								<td>Меньшая популярность, ограниченная экосистема</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h3 class="article-h3">Пример кода на Dart</h3>
+					<p>Пример простой программы на Dart, которая выводит приветствие и сумму двух чисел:</p>
+					<div class="terminal-wrapper">
+						<span>Dart</span>
+						<pre class="terminal"><code>void main() {<br>    int a = 5;<br>    int b = 7;<br>    int sum = a + b;<br>    print('Привет, мир!');<br>    print('Сумма: \$sum');<br>}</code></pre>
+					</div>
+				</section>
+				<footer class="article-footer">
+					<span class="nowrap">Рубрика: <span class="blue">Языки программирования</span></span>
+					<span>|</span>
+					<span>Тэги:</span>
+					<ul class="tags">
+						<li class="blue">#Dart</li>
+						<li class="blue">#мобильная_разработка</li>
+						<li class="blue">#Flutter</li>
+					</ul>
+				</footer>
+			</article>
+		</main>
+
+		<div class="empty2"></div>
+		<footer class="footer">
+			<div class="copyright scalelable">
+				<span>
+					&copy;<span class="copyright-text">Все права защищены,</span>
+					<span class="nowrap">ProgLN <span id="year"></span></span>
+				</span>
+			</div>
+			<div class="contacts">
+				<h3 class="contacts-header">Контакты</h3>
+				<ul class="contacts-list">
+					<li class="contacts-item">
+						<a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+					</li>
+					<li class="contacts-item">
+						<a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>

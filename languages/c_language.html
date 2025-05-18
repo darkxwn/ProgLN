@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Узнайте об истории создания языка программирования C, его развитии, характеристиках, преимуществах и недостатках. Пример кода и таблица свойств — в статье."
+		/>
+		<meta
+			name="keywords"
+			content="язык программирования C, история C, системное программирование, компиляторы, разработка ОС, C пример кода, ANSI C, ISO C"
+		/>
+		<title>ProgLN | Python</title>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles/style.css" />
+	</head>
+
+	<body>
+		<hr class="upper-line" />
+		<header class="header">
+			<div class="site">
+				<a class="site-link" href="index.html">
+					<h1 class="site-name">ProgLN</h1>
+					<img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+				</a>
+			</div>
+			<div class="second-line">
+				<div class="description">
+					<p class="desc-text">Сайт о языках программирования</p>
+				</div>
+				<nav class="navigation">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="../index.html">Главная</a></li>
+						<li class="nav-item"><a href="../languages.html">Языки</a></li>
+						<li class="nav-item"><a href="../articles.html">Статьи</a></li>
+						<li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+						<li class="nav-item"><a href="../about.html">О нас</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="empty1"></div>
+		<div class="poster">
+			<img src="../images/poster.png" alt="Постер ProgLN" />
+			<hr />
+		</div>
+		<main class="container">
+			<article class="article">
+				<header class="article-header">
+					<h2 class="article-h2">Язык программирования C</h2>
+				</header>
+				<img class="article-lang-logo" src="../images/logos/c.svg" alt="C" />
+				<p>
+					Язык программирования C — один из самых влиятельных и широко используемых языков в истории вычислительной техники. Он был создан в начале
+					1970-х годов в Bell Labs американским учёным Деннисом Ритчи. Целью было разработать эффективный и переносимый язык для реализации
+					операционной системы Unix.
+				</p>
+				<p>
+					Сочетая в себе элементы высокого и низкого уровня, C стал основой для разработки операционных систем, встроенных систем, компиляторов и
+					других языков программирования, включая C++, Java и C#.
+				</p>
+
+				<section>
+					<h3 class="article-h3">Развитие языка C</h3>
+					<p>
+						Первая версия языка C появилась в 1972 году, а в 1978 была опубликована книга "The C Programming Language" Кернигана и Ритчи, что сыграло
+						ключевую роль в стандартизации языка. В 1989 году ANSI утвердил стандарт ANSI C (C89), позже последовал международный стандарт ISO C
+						(C90).
+					</p>
+					<p>
+						С тех пор язык продолжал эволюционировать: были добавлены новые версии стандарта — C99, C11 и C18, каждая из которых вносила улучшения в
+						работу с памятью, многопоточностью, читаемостью и поддержкой современных архитектур.
+					</p>
+				</section>
+
+				<section>
+					<h3 class="article-h3">Характеристика, преимущества и недостатки C</h3>
+					<p>
+						C — это компилируемый, статически типизированный язык низкого уровня с прямым доступом к памяти. Он обеспечивает высокую
+						производительность и контроль над системными ресурсами, что делает его идеальным для системного программирования и встраиваемых решений.
+					</p>
+					<p>
+						Основные преимущества языка включают высокую скорость выполнения, минимальные накладные расходы, кросс-платформенность и широкую
+						применимость. К недостаткам можно отнести сложность управления памятью, отсутствие встроенной поддержки ООП и слабую защиту от ошибок,
+						возникающих из-за указателей или переполнений буфера.
+					</p>
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Аспект</th>
+								<th>Описание</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Типизация</td>
+								<td>Статическая, сильная</td>
+							</tr>
+							<tr>
+								<td>Парадигма</td>
+								<td>Процедурное программирование</td>
+							</tr>
+							<tr>
+								<td>Скорость выполнения</td>
+								<td>Очень высокая</td>
+							</tr>
+							<tr>
+								<td>Управление памятью</td>
+								<td>Ручное, через malloc/free</td>
+							</tr>
+							<tr>
+								<td>Применение</td>
+								<td>ОС, драйверы, встраиваемые системы, компиляторы</td>
+							</tr>
+							<tr>
+								<td>Преимущества</td>
+								<td>Производительность, контроль, близость к «железу»</td>
+							</tr>
+							<tr>
+								<td>Недостатки</td>
+								<td>Сложное управление памятью, низкий уровень абстракции</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h3 class="article-h3">Пример кода на C</h3>
+					<p>Ниже приведён простой пример программы на C, которая выводит на экран приветствие и рассчитывает сумму двух чисел:</p>
+					<div class="terminal-wrapper">
+                        <span>C</span>
+                        <pre class="terminal"><code>#include &lt;stdio.h&gt;<br><br>int main() {<br>    int a = 5;<br>    int b = 7;    <br>    int sum = a + b;<br>    printf("Привет, мир!\n");<br>    printf("Сумма: %d\n", sum);<br>    return 0;<br>}</pre></code>
+					</div>
+				</section>
+				<footer class="article-footer">
+					<span class="nowrap">Рубрика: <span class="blue">Языки программирования</span></span>
+					<span>|</span>
+					<span>Тэги:</span>
+					<ul class="tags">
+						<li class="blue">#языки_программирования</li>
+						<li class="blue">#C</li>
+						<li class="blue">#системное_программирование</li>
+					</ul>
+				</footer>
+			</article>
+		</main>
+
+		<div class="empty2"></div>
+		<footer class="footer">
+			<div class="copyright scalelable">
+				<span>
+					&copy;<span class="copyright-text">Все права защищены,</span>
+					<span class="nowrap">ProgLN <span id="year"></span> </span>
+				</span>
+			</div>
+			<div class="contacts">
+				<h3 class="contacts-header">Контакты</h3>
+				<ul class="contacts-list">
+					<li class="contacts-item">
+						<a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+					</li>
+					<li class="contacts-item">
+						<a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>
