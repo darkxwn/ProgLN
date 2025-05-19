@@ -738,6 +738,7 @@ code {
 	.nav-item>a {
 		display: block;
 		width: 100%;
+		height: fit-content;
 		text-align: center;
 		padding: 5px 0;
 	}
