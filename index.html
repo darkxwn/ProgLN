@@ -68,7 +68,8 @@
 				<p>
 					В последние годы рынок труда в сфере информационных технологий в России претерпевает значительные изменения. Рост цифровизации, внедрение
 					новых технологий и повышение спроса на IT-услуги способствуют увеличению числа вакансий и, как следствие, росту заработных плат
-					специалистов. В прошедшем 2024 году медианная зарплата IT-специалистов в России составила 151 666 ₽, что на 8% больше раннее известных значений.
+					специалистов. В прошедшем 2024 году медианная зарплата IT-специалистов в России составила 151 666 ₽, что на 8% больше раннее известных
+					значений.
 				</p>
 				<footer class="article-footer">
 					<span class="nowrap"><a href="articles/salary-in-it.html" class="blue">Постоянная ссылка</a></span>
@@ -97,57 +98,56 @@
 				</footer>
 			</article>
 		</main>
-
 		<aside class="sidebar">
 			<div class="search">
 				<input class="search-field" type="search" placeholder="Поиск..." />
 				<input class="search-btn" type="submit" value="Найти" />
 			</div>
-			<div class="sidebar-section">
-				<span id="clock"></span>
-			</div>
-			<div class="sidebar-section">
-				<h3 class="section-header">Свежие записи</h3>
+			<div id="clock"></div>
+
+			<details class="sidebar-section">
+				<summary class="section-header">Свежие записи</summary>
 				<ul class="section-list">
 					<li class="section-list-item">
 						<a class="blue" href="articles/compiled-and-interpreted.html">Компилируемые и интерпретируемые языки программирования: разница?</a>
 					</li>
-					<li class="section-list-item"><a class="blue" href="#">Компилируемые и интерпритирумые языки, разница</a></li>
-					<li class="section-list-item"><a class="blue" href="#">Наш топ языков программирования</a></li>
-					<li class="section-list-item"><a class="blue" href="#">Какие языки популярны в 2025 году?</a></li>
+					<li class="section-list-item">
+						<a class="blue" href="articles/compiled-and-interpreted.html">Компилируемые и интерпритирумые языки, разница</a>
+					</li>
 					<li class="section-list-item"><a class="blue" href="articles.html">Другие статьи</a></li>
 				</ul>
-			</div>
-			<div class="sidebar-section">
-				<h3 class="section-header">Архивы</h3>
+			</details>
+
+			<details class="sidebar-section">
+				<summary class="section-header">Свежие комментарии</summary>
+				<ul class="section-list">
+					<li class="section-list-item"><a class="blue" href="#">Скоро создадут...</a></li>
+					<li class="section-list-item"><a class="blue" href="#">Кто бы мог...</a></li>
+				</ul>
+			</details>
+
+			<details class="sidebar-section">
+				<summary class="section-header">Архивы</summary>
 				<ul class="section-list">
 					<li class="section-list-item"><a class="blue" href="#">Топ статей 2024</a></li>
 					<li class="section-list-item"><a class="blue" href="#">Топ языков 2022</a></li>
 					<li class="section-list-item"><a class="blue" href="#">Топ зарплат 2023</a></li>
 				</ul>
-			</div>
-			<div class="sidebar-section">
-				<h3 class="section-header">Рубрики</h3>
+			</details>
+
+			<details class="sidebar-section">
+				<summary class="section-header">рубрики</summary>
 				<ul class="section-list">
 					<li class="section-list-item"><a class="blue" href="#">Без рубрики</a></li>
 					<li class="section-list-item"><a class="blue" href="#">Языки программирования</a></li>
-					<li class="section-list-item"><a class="blue" href="#">Кто бы что не говорил...</a></li>
+					<li class="section-list-item"><a class="blue" href="#">Системное программирование</a></li>
 				</ul>
-			</div>
-			<div class="sidebar-section">
-				<h3 class="section-header">Мета</h3>
-				<ul class="section-list">
-					<li class="section-list-item"><a class="blue" href="#">Управление сайтом</a></li>
-					<li class="section-list-item"><a class="blue" href="#">Выйти</a></li>
-					<li class="section-list-item"><a class="blue" href="#">RSS записей</a></li>
-					<li class="section-list-item"><a class="blue" href="#">RSS комментариев</a></li>
-				</ul>
-			</div>
+			</details>
 		</aside>
 
 		<div class="empty2"></div>
 		<footer class="footer">
-			<div class="copyright scalelable">
+			<div class="copyright">
 				<span>
 					&copy;<span class="copyright-text">Все права защищены,</span>
 					<span class="nowrap">ProgLN <span id="year"></span> </span>
@@ -167,5 +167,13 @@
 		</footer>
 		<script src="scripts/script.js"></script>
 		<script src="scripts/time.js"></script>
+		<script>
+			let mql = window.matchMedia("(min-width: 426px)");
+			if (mql.matches) {
+				document.querySelectorAll("details").forEach((details) => {
+					details.open = true;
+				});
+			}
+		</script>
 	</body>
 </html>
