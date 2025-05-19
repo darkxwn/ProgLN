@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgLN | Lisp</title>
+    <meta name="description" content="Статья о языке Lisp: история, особенности, преимущества и недостатки, пример кода." />
+    <meta name="keywords" content="Lisp, язык программирования, функциональный, символический, AI" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <hr class="upper-line" />
+    <header class="header">
+        <div class="site">
+            <a class="site-link" href="index.html">
+                <h1 class="site-name">ProgLN</h1>
+                <img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+            </a>
+        </div>
+        <div class="second-line">
+            <div class="description">
+                <p class="desc-text">Сайт о языках программирования</p>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a href="../languages.html">Языки</a></li>
+                    <li class="nav-item"><a href="../articles.html">Статьи</a></li>
+                    <li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+                    <li class="nav-item"><a href="../about.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="empty1"></div>
+    <div class="poster">
+        <img src="../images/poster.png" alt="Постер ProgLN" />
+        <hr />
+    </div>
+
+    <main class="container">
+        <article class="article">
+            <header class="article-header">
+                <h2 class="article-h2">Lisp</h2>
+            </header>
+            <img class="article-lang-logo" src="../images/logos/lisp.svg" alt="Lisp" />
+
+            <p>
+                Lisp (LISt Processing) — один из старейших языков программирования, созданный в конце 1950-х годов для работы с символической информацией и решения задач в области искусственного интеллекта.
+            </p>
+            <p>
+                Его ключевая особенность — использование списков в качестве основной структуры данных и обширные возможности метапрограммирования за счёт макросов и homoiconicity (код и данные имеют одинаковую структуру).
+            </p>
+
+            <section>
+                <h3 class="article-h3">Развитие Lisp</h3>
+                <p>
+                    Lisp был разработан Джоном Маккарти в 1958 году и стал вторым по старшинству языком программирования общего назначения после Fortran. С тех пор язык породил множество диалектов, включая Common Lisp, Scheme, Emacs Lisp и Clojure. Каждый из них развивал идеологию Lisp в своём направлении — от строгости и минимализма до практической гибкости и расширяемости. Несмотря на возраст, язык продолжает использоваться, особенно в научных, исследовательских и AI-средах.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Характеристика, преимущества и недостатки Lisp</h3>
+                <p>
+                    Lisp предлагает исключительную гибкость, мощные средства макропрограммирования и поддержку рекурсии и функционального программирования. Его синтаксис минимален, а структура данных и кода едина, что делает его мощным инструментом для создания DSL и сложных алгоритмов.
+                </p>
+                <p>
+                    Недостатками можно считать непривычный синтаксис с большим количеством скобок, крутую кривую обучения и меньшую популярность по сравнению с современными языками, что снижает доступность библиотек и инструментов.
+                </p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Аспект</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Типизация</td>
+                            <td>Динамическая</td>
+                        </tr>
+                        <tr>
+                            <td>Парадигмы</td>
+                            <td>Функциональная, процедурная, метапрограммирование</td>
+                        </tr>
+                        <tr>
+                            <td>Скорость обработки</td>
+                            <td>Средняя</td>
+                        </tr>
+                        <tr>
+                            <td>Управление памятью</td>
+                            <td>Сборщик мусора</td>
+                        </tr>
+                        <tr>
+                            <td>Применение</td>
+                            <td>AI, научные исследования, расширения (Emacs)</td>
+                        </tr>
+                        <tr>
+                            <td>Основные преимущества</td>
+                            <td>Гибкость, макросистема, единообразие кода и данных</td>
+                        </tr>
+                        <tr>
+                            <td>Основные недостатки</td>
+                            <td>Сложность синтаксиса, ограниченная экосистема</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Пример кода на Lisp</h3>
+                <div class="terminal-wrapper">
+                    <span>Lisp</span>
+                    <pre class="terminal"><code>(defun factorial (n)
+  (if (= n 0)
+      1
+      (* n (factorial (- n 1)))))
+
+(print (factorial 5))</code></pre>
+                </div>
+            </section>
+
+            <footer class="article-footer">
+                <span class="nowrap">Рубрика: <span class="blue">Функциональные языки</span></span>
+                <span>|</span>
+                <span>Тэги:</span>
+                <ul class="tags">
+                    <li class="blue">#Lisp</li>
+                    <li class="blue">#AI</li>
+                    <li class="blue">#Функциональный</li>
+                    <li class="blue">#ЯП</li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+
+    <div class="empty2"></div>
+    <footer class="footer">
+        <div class="copyright scalelable">
+            <span>
+                &copy;<span class="copyright-text">Все права защищены,</span>
+                <span class="nowrap">ProgLN <span id="year"></span></span>
+            </span>
+        </div>
+        <div class="contacts">
+            <h3 class="contacts-header">Контакты</h3>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

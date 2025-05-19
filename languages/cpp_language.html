@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ProgLN | C++</title>
+	<meta name="description" content="Статья о языке программирования C++: история создания, особенности, преимущества, недостатки и пример кода." />
+	<meta name="keywords" content="C++, язык программирования, программирование, Бьёрн Страуструп, объектно-ориентированное программирование, пример кода, плюсы и минусы" />
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+	<hr class="upper-line" />
+	<header class="header">
+		<div class="site">
+			<a class="site-link" href="index.html">
+				<h1 class="site-name">ProgLN</h1>
+				<img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+			</a>
+		</div>
+		<div class="second-line">
+			<div class="description">
+				<p class="desc-text">Сайт о языках программирования</p>
+			</div>
+			<nav class="navigation">
+				<ul class="nav-list">
+					<li class="nav-item"><a href="../index.html">Главная</a></li>
+					<li class="nav-item"><a href="../languages.html">Языки</a></li>
+					<li class="nav-item"><a href="../articles.html">Статьи</a></li>
+					<li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+					<li class="nav-item"><a href="../about.html">О нас</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="empty1"></div>
+	<div class="poster">
+		<img src="../images/poster.png" alt="Постер ProgLN" />
+		<hr />
+	</div>
+	<main class="container">
+		<article class="article">
+			<header class="article-header">
+				<h2 class="article-h2">Язык программирования C++</h2>
+			</header>
+			<img class="article-lang-logo" src="../images/logos/cpp.svg" alt="C++" />
+			<p>
+				C++ — мощный язык программирования общего назначения, разработанный Бьёрном Страуструпом в начале 1980-х годов как расширение языка C с
+				поддержкой объектно-ориентированного программирования. Он сочетает производительность C с возможностями абстракции высокого уровня.
+			</p>
+			<p>
+				C++ широко используется в системном и прикладном программировании, включая разработку операционных систем, игр, драйверов и
+				высокопроизводительных приложений.
+			</p>
+			<section>
+				<h3 class="article-h3">Развитие C++</h3>
+				<p>
+					С момента своего появления C++ постоянно развивается, включая новые возможности, такие как шаблоны, исключения и современные стандартные
+					библиотеки. Стандарты языка (C++98, C++11, C++17, C++20 и др.) регулярно обновляются, улучшая синтаксис, безопасность и выразительность
+					кода.
+				</p>
+				<p>Сегодня C++ остается востребованным в критически важных системах, где необходимы контроль над ресурсами и высокая производительность.</p>
+			</section>
+			<section>
+				<h3 class="article-h3">Характеристика, преимущества и недостатки C++</h3>
+				<p>
+					C++ — компилируемый, статически типизированный язык, который поддерживает процедурное, объектно-ориентированное и обобщённое
+					программирование. Он обеспечивает низкоуровневый контроль и высокую производительность.
+				</p>
+				<p>
+					Среди преимуществ: скорость выполнения, гибкость и широкие возможности. Недостатки включают сложность языка, необходимость управления
+					памятью вручную и более высокий порог входа для новичков.
+				</p>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Аспект</th>
+							<th>Описание</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Типизация</td>
+							<td>Статическая, сильная</td>
+						</tr>
+						<tr>
+							<td>Парадигмы</td>
+							<td>Процедурное, объектно-ориентированное, обобщённое</td>
+						</tr>
+						<tr>
+							<td>Скорость выполнения</td>
+							<td>Очень высокая</td>
+						</tr>
+						<tr>
+							<td>Управление памятью</td>
+							<td>Ручное (с возможностью автоматизации)</td>
+						</tr>
+						<tr>
+							<td>Применение</td>
+							<td>Системное ПО, игры, высокопроизводительные приложения</td>
+						</tr>
+						<tr>
+							<td>Основные преимущества</td>
+							<td>Производительность, контроль, кроссплатформенность</td>
+						</tr>
+						<tr>
+							<td>Основные недостатки</td>
+							<td>Сложность, риск ошибок при управлении ресурсами</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<h3 class="article-h3">Пример кода на C++</h3>
+				<p>Ниже приведён пример простой программы на C++, которая выводит на экран приветствие и сумму двух чисел:</p>
+				<div class="terminal-wrapper">
+					<span>C++</span>
+					<pre class="terminal"><code >#include &lt;iostream&gt;<br>using namespace std;<br><br>int main() {<br>    int a = 5;<br>    int b = 7;<br>    int sum = a + b;<br>    cout &lt;&lt; "Привет, мир!" &lt;&lt; endl;<br>    cout &lt;&lt; "Сумма: " &lt;&lt; sum &lt;&lt; endl;<br>    return 0;<br>}</code></pre>
+				</div>
+			</section>
+			<footer class="article-footer">
+				<span class="nowrap">Рубрика: <span class="blue">Языки программирования</span></span>
+				<span>|</span>
+				<span>Тэги:</span>
+				<ul class="tags">
+					<li class="blue">#C++</li>
+					<li class="blue">#разработка</li>
+					<li class="blue">#производительность</li>
+				</ul>
+			</footer>
+		</article>
+	</main>
+	<div class="empty2"></div>
+	<footer class="footer">
+		<div class="copyright scalelable">
+			<span>
+				&copy;<span class="copyright-text">Все права защищены,</span>
+				<span class="nowrap">ProgLN <span id="year"></span></span>
+			</span>
+		</div>
+		<div class="contacts">
+			<h3 class="contacts-header">Контакты</h3>
+			<ul class="contacts-list">
+				<li class="contacts-item">
+					<a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+				</li>
+				<li class="contacts-item">
+					<a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="../scripts/script.js"></script>
+</body>
+
+</html>

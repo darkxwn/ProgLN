@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgLN | XML</title>
+    <meta name="description" content="Статья о языке разметки XML: история, преимущества и недостатки, пример кода." />
+    <meta name="keywords" content="XML, язык разметки, структура данных, данные, описание" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <hr class="upper-line" />
+    <header class="header">
+        <div class="site">
+            <a class="site-link" href="index.html">
+                <h1 class="site-name">ProgLN</h1>
+                <img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+            </a>
+        </div>
+        <div class="second-line">
+            <div class="description">
+                <p class="desc-text">Сайт о языках программирования</p>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a href="../languages.html">Языки</a></li>
+                    <li class="nav-item"><a href="../articles.html">Статьи</a></li>
+                    <li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+                    <li class="nav-item"><a href="../about.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="empty1"></div>
+    <div class="poster">
+        <img src="../images/poster.png" alt="Постер ProgLN" />
+        <hr />
+    </div>
+
+    <main class="container">
+        <article class="article">
+            <header class="article-header">
+                <h2 class="article-h2">XML</h2>
+            </header>
+            <img class="article-lang-logo" src="../images/logos/xml.svg" alt="XML" />
+
+            <p>
+                XML (Extensible Markup Language) — это расширяемый язык разметки, предназначенный для хранения и передачи структурированных данных. Он представляет собой текстовый формат, понятный как человеку, так и машине.
+            </p>
+            <p>
+                XML активно используется в обмене данными между различными системами, в конфигурационных файлах, документах и веб-службах, включая SOAP и RSS.
+            </p>
+
+            <section>
+                <h3 class="article-h3">Развитие XML</h3>
+                <p>
+                    XML был разработан консорциумом W3C в 1998 году как упрощённая и более универсальная альтернатива SGML. Он стал стандартом для межплатформенного обмена данными в ранние годы веба и широко использовался в документообороте, конфигурационных системах и бизнес-приложениях. Со временем на смену XML в некоторых областях пришли более лёгкие форматы, такие как JSON и YAML, однако XML до сих пор используется в банковских системах, SOAP-сервисах и стандартах вроде DocBook или XHTML.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Характеристика, преимущества и недостатки</h3>
+                <p>
+                    XML поддерживает иерархическую структуру, позволяет описывать произвольные типы данных и может быть расширен под любые нужды. Он читаем человеком, платформонезависим, поддерживается множеством языков и инструментов.
+                </p>
+                <p>
+                    Основные недостатки — громоздкость, избыточность и относительно большая сложность по сравнению с более современными форматами, такими как JSON. Также обработка XML требует больше ресурсов, особенно в больших объёмах данных.
+                </p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Аспект</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Тип</td>
+                            <td>Язык разметки</td>
+                        </tr>
+                        <tr>
+                            <td>Стандартизация</td>
+                            <td>W3C, 1998</td>
+                        </tr>
+                        <tr>
+                            <td>Применение</td>
+                            <td>Конфигурации, обмен данными, документы, API</td>
+                        </tr>
+                        <tr>
+                            <td>Преимущества</td>
+                            <td>Расширяемость, читаемость, совместимость</td>
+                        </tr>
+                        <tr>
+                            <td>Недостатки</td>
+                            <td>Громоздкость, избыточность, сложность обработки</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Пример XML</h3>
+                <div class="terminal-wrapper">
+                    <span>XML</span>
+                    <pre class="terminal"><code>&lt;book&gt;<br>    &lt;title&gt;Программирование на XML&lt;/title&gt;<br>    &lt;author&gt;Иван Иванов&lt;/author&gt;<br>    &lt;year&gt;2023&lt;/year&gt;<br>&lt;/book&gt;</code></pre>
+                </div>
+            </section>
+
+            <footer class="article-footer">
+                <span class="nowrap">Рубрика: <span class="blue">Языки разметки</span></span>
+                <span>|</span>
+                <span>Тэги:</span>
+                <ul class="tags">
+                    <li class="blue">#XML</li>
+                    <li class="blue">#Markup</li>
+                    <li class="blue">#Данные</li>
+                    <li class="blue">#Форматирование</li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+
+    <div class="empty2"></div>
+    <footer class="footer">
+        <div class="copyright scalelable">
+            <span>
+                &copy;<span class="copyright-text">Все права защищены,</span>
+                <span class="nowrap">ProgLN <span id="year"></span></span>
+            </span>
+        </div>
+        <div class="contacts">
+            <h3 class="contacts-header">Контакты</h3>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

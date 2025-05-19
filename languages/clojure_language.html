@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgLN | Clojure</title>
+    <meta name="description" content="Статья о Clojure: история, особенности, преимущества и недостатки, пример кода." />
+    <meta name="keywords" content="Clojure, язык программирования, функциональное программирование, Lisp, JVM" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <hr class="upper-line" />
+    <header class="header">
+        <div class="site">
+            <a class="site-link" href="index.html">
+                <h1 class="site-name">ProgLN</h1>
+                <img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+            </a>
+        </div>
+        <div class="second-line">
+            <div class="description">
+                <p class="desc-text">Сайт о языках программирования и разметке</p>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a href="../languages.html">Языки</a></li>
+                    <li class="nav-item"><a href="../articles.html">Статьи</a></li>
+                    <li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+                    <li class="nav-item"><a href="../about.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="empty1"></div>
+    <div class="poster">
+        <img src="../images/poster.png" alt="Постер ProgLN" />
+        <hr />
+    </div>
+
+    <main class="container">
+        <article class="article">
+            <header class="article-header">
+                <h2 class="article-h2">Clojure</h2>
+            </header>
+            <img class="article-lang-logo" src="../images/logos/clojure.svg" alt="Clojure" />
+
+            <p>
+                Clojure — современный функциональный язык программирования, основанный на диалекте Lisp и работающий на платформе Java Virtual Machine (JVM).
+                Он сочетает в себе простоту Lisp с мощью экосистемы Java, а также предоставляет широкие возможности для работы с неизменяемыми структурами данных.
+            </p>
+            <p>
+                Язык активно используется в задачах, где требуется высокая параллелизация, надёжность и лаконичность кода. Он часто применяется в области аналитики данных,
+                веб-разработки и многопоточного программирования.
+            </p>
+
+            <section>
+                <h3 class="article-h3">Развитие Clojure</h3>
+                <p>
+                    Clojure был создан программистом Ричем Хикки и выпущен в 2007 году как открытый проект. Язык был разработан с целью предоставить мощный функциональный
+                    подход для промышленной разработки, используя возможности платформы Java. С течением времени Clojure получил поддержку из сообщества, был адаптирован
+                    для JavaScript (ClojureScript) и стал популярен в стартапах и среди приверженцев функционального программирования. Несмотря на нишевость, язык активно
+                    поддерживается и развивается.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Характеристика, преимущества и недостатки Clojure</h3>
+                <p>
+                    Среди сильных сторон Clojure — лаконичный и выразительный синтаксис, неизменяемость данных по умолчанию, мощные средства работы с многопоточностью,
+                    а также совместимость с Java-библиотеками. Он идеально подходит для задач с высокой нагрузкой и сложной логикой.
+                </p>
+                <p>
+                    Однако язык может показаться сложным новичкам из-за необычного синтаксиса Lisp, а отладка и настройка окружения требуют опыта. Кроме того, сообщество
+                    Clojure меньше по сравнению с другими популярными языками.
+                </p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Аспект</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Типизация</td>
+                            <td>Динамическая</td>
+                        </tr>
+                        <tr>
+                            <td>Парадигмы</td>
+                            <td>Функциональная, декларативная</td>
+                        </tr>
+                        <tr>
+                            <td>Скорость обработки</td>
+                            <td>Высокая (благодаря JVM)</td>
+                        </tr>
+                        <tr>
+                            <td>Управление памятью</td>
+                            <td>Сборка мусора (JVM)</td>
+                        </tr>
+                        <tr>
+                            <td>Применение</td>
+                            <td>Многопоточность, анализ данных, веб-разработка</td>
+                        </tr>
+                        <tr>
+                            <td>Основные преимущества</td>
+                            <td>Иммутабельность, интеграция с Java, выразительность</td>
+                        </tr>
+                        <tr>
+                            <td>Основные недостатки</td>
+                            <td>Необычный синтаксис, меньшая популярность, высокая порог вхождения</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Пример кода на Clojure</h3>
+                <div class="terminal-wrapper">
+                    <span>Clojure</span>
+                    <pre class="terminal"><code>(defn square [x]<br>    (* x x))<br><br>(println "Квадрат 5:" (square 5))</code></pre>
+                </div>
+            </section>
+
+            <footer class="article-footer">
+                <span class="nowrap">Рубрика: <span class="blue">Функциональные языки</span></span>
+                <span>|</span>
+                <span>Тэги:</span>
+                <ul class="tags">
+                    <li class="blue">#Clojure</li>
+                    <li class="blue">#Lisp</li>
+                    <li class="blue">#функциональное программирование</li>
+                    <li class="blue">#JVM</li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+
+    <div class="empty2"></div>
+    <footer class="footer">
+        <div class="copyright scalelable">
+            <span>
+                &copy;<span class="copyright-text">Все права защищены,</span>
+                <span class="nowrap">ProgLN <span id="year"></span></span>
+            </span>
+        </div>
+        <div class="contacts">
+            <h3 class="contacts-header">Контакты</h3>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

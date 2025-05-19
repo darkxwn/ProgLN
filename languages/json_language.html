@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgLN | JSON</title>
+    <meta name="description" content="Статья о формате JSON: история, особенности, преимущества и недостатки, пример." />
+    <meta name="keywords" content="JSON, формат данных, сериализация, JavaScript Object Notation" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <hr class="upper-line" />
+    <header class="header">
+        <div class="site">
+            <a class="site-link" href="index.html">
+                <h1 class="site-name">ProgLN</h1>
+                <img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+            </a>
+        </div>
+        <div class="second-line">
+            <div class="description">
+                <p class="desc-text">Сайт о языках программирования</p>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a href="../languages.html">Языки</a></li>
+                    <li class="nav-item"><a href="../articles.html">Статьи</a></li>
+                    <li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+                    <li class="nav-item"><a href="../about.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="empty1"></div>
+    <div class="poster">
+        <img src="../images/poster.png" alt="Постер ProgLN" />
+        <hr />
+    </div>
+
+    <main class="container">
+        <article class="article">
+            <header class="article-header">
+                <h2 class="article-h2">JSON</h2>
+            </header>
+            <img class="article-lang-logo" src="../images/logos/json.svg" alt="JSON" />
+
+            <p>
+                JSON (JavaScript Object Notation) — это лёгкий формат обмена данными, основанный на подмножестве языка JavaScript. Он используется для представления структурированных данных в формате, удобном для чтения человеком и обработки машиной.
+            </p>
+            <p>
+                JSON стал стандартом для передачи данных между клиентом и сервером в веб-разработке благодаря своей простоте, универсальности и тесной интеграции с JavaScript.
+            </p>
+
+            <section>
+                <h3 class="article-h3">Развитие JSON</h3>
+                <p>
+                    Формат JSON был предложен Дугласом Крокфордом в начале 2000-х годов как альтернатива громоздкому и сложному XML. Быстро набрав популярность, JSON был формализован как стандарт (RFC 4627, а затем RFC 8259). Сейчас он поддерживается практически всеми языками программирования, используется в API, базах данных (например, MongoDB), конфигурационных файлах и системах сериализации.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Характеристика, преимущества и недостатки JSON</h3>
+                <p>
+                    JSON предлагает простой, человекочитаемый синтаксис, легко парсится и генерируется большинством языков. Он идеально подходит для передачи структурированных данных в веб-приложениях и REST API. Малый объём и широкая поддержка способствуют его повсеместному применению.
+                </p>
+                <p>
+                    Недостатками JSON являются ограниченность типов данных (нет поддержки комментариев, бинарных данных, функций), а также отсутствие схем в базовом формате. При передаче больших объёмов данных JSON может уступать более компактным бинарным форматам (например, Protobuf).
+                </p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Аспект</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Тип</td>
+                            <td>Формат сериализации данных</td>
+                        </tr>
+                        <tr>
+                            <td>Основа</td>
+                            <td>JavaScript (но используется независимо)</td>
+                        </tr>
+                        <tr>
+                            <td>Применение</td>
+                            <td>API, конфигурации, обмен данными</td>
+                        </tr>
+                        <tr>
+                            <td>Преимущества</td>
+                            <td>Простой, универсальный, читаемый, широко поддерживаемый</td>
+                        </tr>
+                        <tr>
+                            <td>Недостатки</td>
+                            <td>Ограниченный формат, нет комментариев, неэффективен при больших объёмах</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Пример JSON-документа</h3>
+                <div class="terminal-wrapper">
+                    <span>JSON</span>
+                    <pre class="terminal"><code>{<br>    "name": "John Doe",<br>    "age": 30,<br>    "email": "john@example.com",<br>    "skills": ["JavaScript", "Python", "Go"]<br>}</code></pre>
+                </div>
+            </section>
+
+            <footer class="article-footer">
+                <span class="nowrap">Рубрика: <span class="blue">Форматы данных</span></span>
+                <span>|</span>
+                <span>Тэги:</span>
+                <ul class="tags">
+                    <li class="blue">#JSON</li>
+                    <li class="blue">#Формат</li>
+                    <li class="blue">#JavaScript</li>
+                    <li class="blue">#Сериализация</li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+
+    <div class="empty2"></div>
+    <footer class="footer">
+        <div class="copyright scalelable">
+            <span>
+                &copy;<span class="copyright-text">Все права защищены,</span>
+                <span class="nowrap">ProgLN <span id="year"></span></span>
+            </span>
+        </div>
+        <div class="contacts">
+            <h3 class="contacts-header">Контакты</h3>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

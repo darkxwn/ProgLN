@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgLN | Carbon</title>
+    <meta name="description" content="Статья о языке Carbon: история, особенности, преимущества и недостатки, пример кода." />
+    <meta name="keywords" content="Carbon, язык программирования, Google, C++ альтернатива" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <hr class="upper-line" />
+    <header class="header">
+        <div class="site">
+            <a class="site-link" href="index.html">
+                <h1 class="site-name">ProgLN</h1>
+                <img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+            </a>
+        </div>
+        <div class="second-line">
+            <div class="description">
+                <p class="desc-text">Сайт о языках программирования</p>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a href="../languages.html">Языки</a></li>
+                    <li class="nav-item"><a href="../articles.html">Статьи</a></li>
+                    <li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+                    <li class="nav-item"><a href="../about.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="empty1"></div>
+    <div class="poster">
+        <img src="../images/poster.png" alt="Постер ProgLN" />
+        <hr />
+    </div>
+
+    <main class="container">
+        <article class="article">
+            <header class="article-header">
+                <h2 class="article-h2">Carbon</h2>
+            </header>
+            <img class="article-lang-logo" src="../images/logos/carbon.svg" alt="Carbon" />
+
+            <p>
+                Carbon — это экспериментальный язык программирования, разработанный в Google как возможная преемница C++. Он призван устранить сложности и недостатки C++, предоставляя современный синтаксис и улучшенную безопасность типов.
+            </p>
+            <p>
+                Хотя язык ещё не завершён, он привлёк большое внимание в сообществе благодаря своему подходу к обратной совместимости с C++ и возможностям эволюционного перехода на новый синтаксис.
+            </p>
+
+            <section>
+                <h3 class="article-h3">Развитие Carbon</h3>
+                <p>
+                    Carbon был анонсирован в 2022 году инженерами Google как открытый проект. Целью стало создание современного, безопасного, производительного языка, который можно использовать в тех же сценариях, где применяется C++, но с меньшими затратами на поддержку и обучение. Язык активно развивается сообществом, документация и компилятор находятся в стадии предварительного тестирования, и проект пока не готов к промышленному использованию.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Характеристика, преимущества и недостатки Carbon</h3>
+                <p>
+                    Carbon предлагает безопасную работу с памятью, современный синтаксис, улучшенную поддержку модульности и строгую типизацию. Его дизайн направлен на простоту внедрения в существующий код на C++ и постепенную миграцию проектов.
+                </p>
+                <p>
+                    К недостаткам относится ранняя стадия разработки: отсутствует стабильная реализация, недостаточно инструментов, слабая поддержка IDE и ограниченное сообщество. Также нет гарантии, что язык получит широкое распространение.
+                </p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Аспект</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Типизация</td>
+                            <td>Статическая, строгая</td>
+                        </tr>
+                        <tr>
+                            <td>Парадигмы</td>
+                            <td>Мультипарадигменный (ООП, процедурный)</td>
+                        </tr>
+                        <tr>
+                            <td>Скорость обработки</td>
+                            <td>Ориентирован на высокую производительность</td>
+                        </tr>
+                        <tr>
+                            <td>Управление памятью</td>
+                            <td>Безопасное, с управлением через систему типов</td>
+                        </tr>
+                        <tr>
+                            <td>Применение</td>
+                            <td>Системное программирование (планируемое)</td>
+                        </tr>
+                        <tr>
+                            <td>Основные преимущества</td>
+                            <td>Безопасность, современность, совместимость с C++</td>
+                        </tr>
+                        <tr>
+                            <td>Основные недостатки</td>
+                            <td>Не завершён, малоинструментальный, нестабильный</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 class="article-h3">Пример кода на Carbon</h3>
+                <div class="terminal-wrapper">
+                    <span>Carbon</span>
+                    <pre class="terminal"><code>package Sample api;<br><br>fn Main() -> i32 {<br>    var message: String = "Привет, Carbon!";<br>    Print(message);<br>    return 0;<br>}</code></pre>
+                </div>
+            </section>
+
+            <footer class="article-footer">
+                <span class="nowrap">Рубрика: <span class="blue">Новые языки</span></span>
+                <span>|</span>
+                <span>Тэги:</span>
+                <ul class="tags">
+                    <li class="blue">#Carbon</li>
+                    <li class="blue">#C++</li>
+                    <li class="blue">#Google</li>
+                    <li class="blue">#ЯП</li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+
+    <div class="empty2"></div>
+    <footer class="footer">
+        <div class="copyright scalelable">
+            <span>
+                &copy;<span class="copyright-text">Все права защищены,</span>
+                <span class="nowrap">ProgLN <span id="year"></span></span>
+            </span>
+        </div>
+        <div class="contacts">
+            <h3 class="contacts-header">Контакты</h3>
+            <ul class="contacts-list">
+                <li class="contacts-item">
+                    <a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

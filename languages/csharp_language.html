@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ProgLN | C#</title>
+		<meta name="description" content="Статья о языке программирования C#: история создания, особенности, преимущества, недостатки и пример кода." />
+		<meta
+			name="keywords"
+			content="C#, CSharp, язык программирования, Microsoft, программирование, объектно-ориентированное программирование, пример кода, .NET, преимущества C#"
+		/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../styles/style.css" />
+	</head>
+
+	<body>
+		<hr class="upper-line" />
+		<header class="header">
+			<div class="site">
+				<a class="site-link" href="index.html">
+					<h1 class="site-name">ProgLN</h1>
+					<img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+				</a>
+			</div>
+			<div class="second-line">
+				<div class="description">
+					<p class="desc-text">Сайт о языках программирования</p>
+				</div>
+				<nav class="navigation">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="../index.html">Главная</a></li>
+						<li class="nav-item"><a href="../languages.html">Языки</a></li>
+						<li class="nav-item"><a href="../articles.html">Статьи</a></li>
+						<li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+						<li class="nav-item"><a href="../about.html">О нас</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="empty1"></div>
+		<div class="poster">
+			<img src="../images/poster.png" alt="Постер ProgLN" />
+			<hr />
+		</div>
+		<main class="container">
+			<article class="article">
+				<header class="article-header">
+					<h2 class="article-h2">Язык программирования C#</h2>
+				</header>
+				<img class="article-lang-logo" src="../images/logos/csharp.svg" alt="C#">
+				<p>
+					C# (произносится как "си шарп") — объектно-ориентированный язык программирования, разработанный компанией Microsoft в начале 2000-х годов
+					как часть платформы .NET. Язык создан под руководством Андерса Хейлсберга и ориентирован на простоту, надёжность и производительность.
+				</p>
+				<p>
+					C# сочетает в себе мощь C++ и простоту Java, поддерживая современный синтаксис и множество инструментов для разработки приложений для
+					Windows, веба, мобильных устройств и игр (в том числе через Unity).
+				</p>
+
+				<section>
+					<h3 class="article-h3">Развитие C#</h3>
+					<p>
+						Первая версия C# была представлена в 2002 году. С тех пор язык получил множество обновлений, каждое из которых добавляло новые
+						возможности: автоматические свойства, лямбда-выражения, асинхронное программирование, шаблоны и многое другое.
+					</p>
+					<p>
+						Сегодня C# активно используется для создания бизнес-приложений, игр, облачных решений и кроссплатформенной разработки. Современные версии
+						C# делают упор на выразительность кода и безопасность типов.
+					</p>
+				</section>
+
+				<section>
+					<h3 class="article-h3">Характеристика, преимущества и недостатки C#</h3>
+					<p>
+						C# — строго типизированный язык с поддержкой объектно-ориентированного и функционального подхода. Он работает в рамках CLR (Common
+						Language Runtime), что обеспечивает безопасность исполнения, управление памятью и переносимость.
+					</p>
+					<p>
+						К преимуществам C# относят высокую производительность, тесную интеграцию с экосистемой Microsoft, богатую стандартную библиотеку и
+						активное развитие. Основные недостатки — зависимость от платформы .NET и менее широкое применение вне среды Microsoft.
+					</p>
+
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Аспект</th>
+								<th>Описание</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Типизация</td>
+								<td>Статическая, строгая</td>
+							</tr>
+							<tr>
+								<td>Парадигмы</td>
+								<td>Объектно-ориентированное, функциональное, императивное</td>
+							</tr>
+							<tr>
+								<td>Скорость выполнения</td>
+								<td>Высокая, близкая к нативной</td>
+							</tr>
+							<tr>
+								<td>Управление памятью</td>
+								<td>Автоматическое, через сборку мусора CLR</td>
+							</tr>
+							<tr>
+								<td>Применение</td>
+								<td>Разработка под Windows, веб-приложения, мобильные приложения, игры (Unity)</td>
+							</tr>
+							<tr>
+								<td>Основные преимущества</td>
+								<td>Мощность, безопасность типов, поддержка Visual Studio</td>
+							</tr>
+							<tr>
+								<td>Основные недостатки</td>
+								<td>Тесная связь с экосистемой Microsoft, выше порог входа для новичков</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h3 class="article-h3">Пример кода на C#</h3>
+					<p>Пример простой программы на C#, которая выводит приветствие и сумму двух чисел:</p>
+					<div class="terminal-wrapper">
+						<span>C#</span>
+						<pre class="terminal"><code>using System;<br><br>class Program<br>{<br>    static void Main()<br>    {<br>        Console.WriteLine("Привет, мир!");<br>        int a = 5;<br>        int b = 7;<br>        int sum = a + b;<br>        Console.WriteLine("Сумма: " + sum);<br>    }<br>}</code></pre>
+					</div>
+				</section>
+				<footer class="article-footer">
+					<span class="nowrap">Рубрика: <span class="blue">Языки программирования</span></span>
+					<span>|</span>
+					<span>Тэги:</span>
+					<ul class="tags">
+						<li class="blue">#CSharp</li>
+						<li class="blue">#C#</li>
+						<li class="blue">#программирование</li>
+						<li class="blue">#разработка</li>
+						<li class="blue">#dotnet</li>
+					</ul>
+				</footer>
+			</article>
+		</main>
+
+		<div class="empty2"></div>
+		<footer class="footer">
+			<div class="copyright scalelable">
+				<span>
+					&copy;<span class="copyright-text">Все права защищены,</span>
+					<span class="nowrap">ProgLN <span id="year"></span> </span>
+				</span>
+			</div>
+			<div class="contacts">
+				<h3 class="contacts-header">Контакты</h3>
+				<ul class="contacts-list">
+					<li class="contacts-item">
+						<a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+					</li>
+					<li class="contacts-item">
+						<a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="../scripts/script.js"></script>
+	</body>
+</html>

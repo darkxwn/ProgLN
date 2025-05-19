@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProgLN | Assembler</title>
+  <meta name="description" content="Статья о языке Assembler: история, особенности, преимущества и недостатки, пример." />
+  <meta name="keywords" content="Assembler, Ассемблер, язык низкого уровня, программирование" />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <hr class="upper-line" />
+  <header class="header">
+    <div class="site">
+      <a class="site-link" href="index.html">
+        <h1 class="site-name">ProgLN</h1>
+        <img class="site-logo" src="../images/logo.png" alt="Лог ProgLN" />
+      </a>
+    </div>
+    <div class="second-line">
+      <div class="description">
+        <p class="desc-text">Сайт о языках программирования и разметке</p>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html">Главная</a></li>
+          <li class="nav-item"><a href="../languages.html">Языки</a></li>
+          <li class="nav-item"><a href="../articles.html">Статьи</a></li>
+          <li class="nav-item"><a href="../dictionary.html">Словарь</a></li>
+          <li class="nav-item"><a href="../about.html">О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="empty1"></div>
+  <div class="poster">
+    <img src="../images/poster.png" alt="Постер ProgLN" />
+    <hr />
+  </div>
+
+  <main class="container">
+    <article class="article">
+      <header class="article-header">
+        <h2 class="article-h2">Assembler</h2>
+      </header>
+      <img class="article-lang-logo" src="../images/logos/assembler.svg" alt="Assembler" />
+
+      <p>
+        Assembler (Ассемблер) — это язык программирования низкого уровня, представляющий собой символическую запись машинных инструкций. Каждый оператор ассемблера соответствует одной машинной команде процессора.
+      </p>
+      <p>
+        Он используется для разработки критически важных систем, драйверов, загрузчиков и оптимизированных участков кода, где важны скорость и точность управления оборудованием.
+      </p>
+
+      <section>
+        <h3 class="article-h3">Развитие Assembler</h3>
+        <p>
+          Языки ассемблера возникли в 1940–50-х годах для упрощения программирования на машинном коде. Сначала они применялись исключительно на ранних ЭВМ, а позже эволюционировали в разные диалекты, зависящие от архитектуры (x86, ARM, MIPS и др.). Несмотря на широкое распространение языков высокого уровня, ассемблер остаётся незаменимым в низкоуровневом программировании, встраиваемых системах, BIOS, а также в системной отладке и реверс-инжиниринге.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="article-h3">Характеристика, преимущества и недостатки</h3>
+        <p>
+          Ассемблер обеспечивает полный контроль над оборудованием, позволяя писать высокоэффективный код. Он позволяет использовать все возможности процессора, управлять памятью напрямую и создавать минималистичные программы без лишних абстракций.
+        </p>
+        <p>
+          Однако программирование на ассемблере требует глубокого знания архитектуры и много времени. Его код труднее поддерживать, плохо переносим между платформами и более подвержен ошибкам из-за низкоуровневого характера.
+        </p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Аспект</th>
+              <th>Описание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Тип</td>
+              <td>Низкоуровневый язык</td>
+            </tr>
+            <tr>
+              <td>Платформа</td>
+              <td>Зависит от архитектуры (x86, ARM и др.)</td>
+            </tr>
+            <tr>
+              <td>Применение</td>
+              <td>Драйверы, BIOS, ядра ОС, встраиваемые системы</td>
+            </tr>
+            <tr>
+              <td>Преимущества</td>
+              <td>Максимальная производительность, полный контроль над оборудованием</td>
+            </tr>
+            <tr>
+              <td>Недостатки</td>
+              <td>Сложность, низкая переносимость, трудность сопровождения</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3 class="article-h3">Пример кода на Assembler (x86)</h3>
+        <div class="terminal-wrapper">
+          <span>Assembler</span>
+          <pre class="terminal"><code>section .data    msg db 'Hello, world!', 0Ah<br><br>section .text<br>    global _start<br><br>_start:<br>    mov edx, 13<br>    mov ecx, msg<br>    mov ebx, 1<br>    mov eax, 4<br>    int 0x80<br><br>    mov eax, 1<br>    xor ebx, ebx<br>    int 0x80</code></pre>
+        </div>
+      </section>
+
+      <footer class="article-footer">
+        <span class="nowrap">Рубрика: <span class="blue">Системное программирование</span></span>
+        <span>|</span>
+        <span>Тэги:</span>
+        <ul class="tags">
+          <li class="blue">#Assembler</li>
+          <li class="blue">#Assembly</li>
+          <li class="blue">#Низкий уровень</li>
+          <li class="blue">#Системное ПО</li>
+        </ul>
+      </footer>
+    </article>
+  </main>
+
+  <div class="empty2"></div>
+  <footer class="footer">
+    <div class="copyright scalelable">
+      <span>
+        &copy;<span class="copyright-text">Все права защищены,</span>
+        <span class="nowrap">ProgLN <span id="year"></span></span>
+      </span>
+    </div>
+    <div class="contacts">
+      <h3 class="contacts-header">Контакты</h3>
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <a href="tel:+79494154191"><span class="nowrap">+7(949)415-41-91</span></a>
+        </li>
+        <li class="contacts-item">
+          <a href="mailto:zlobin_victor.off@mail.ru"><span class="nowrap">zlobin_victor.off@mail.ru</span></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../scripts/script.js"></script>
+</body>
+</html>
